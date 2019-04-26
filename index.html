@@ -214,41 +214,9 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       
-      <p>##虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用<code>wireshark</code>获取好友IP</p>
-<pre><code>一、打开wireshark选择本机网卡，由于我本机使用的是无线网卡，所以选择第三个
-</code></pre><p> <img src="/images/1/1.png" alt></p>
-<pre><code>二、双击点击后将会看到大量的流量数据包传送如下图：
-</code></pre><p> <img src="/images/1/2.png" alt></p>
-<pre><code>三、接下来重点来了，筛选搜索我们想要的数据，按Ctrl + F 键进行搜索；
-</code></pre><ul>
-<li>1,选择搜索 <code>字符串</code>;</li>
-<li>2,选择搜索 <code>分组详情</code>;</li>
-<li>3,填写搜索数据 <code>020048</code>;</li>
-</ul>
-<p><img src="/images/1/3.png" alt></p>
-<pre><code>四、设置好搜索参数之后，接下来就找一个想查询的好友发送QQ电话进行获取IP吧、部分QQ版本不接受QQ电话，也可以获取到IP，PC端和移动端均可获取，只要对方QQ在线收到QQ电话邀请即可
-</code></pre><p><img src="/images/1/4.png" alt></p>
-<ul>
-<li>我发送了一次 QQ电话请求，对方没有接受；</li>
-</ul>
-<p><img src="/images/1/5.png" alt></p>
-<pre><code>五、在发起请求之后，回到wireshark界面，多次点击 `查找` 来追踪数据，当发现查找能自动定位到连接数据的时候就可以关闭电话邀请，并且停止wireshark的监听，避免差生过多的数据，下面请看查找后自动定位到的数据，192.168.88.103是我本机内网IP，右边的222.139.***.*** 就是对方的IP地址了
-</code></pre><p><img src="/images/1/6.png" alt></p>
-<ul>
-<li>获取到IP地址后，可以做到事情就不列举了，今天给大家介绍的是获取ip进行定位（大家都知道IP定位的原理，定位的效果也是视情况而定的，如果是wifi，企业网络，固定IP网络，那么效果当然是非常好的，但是如果是移动网络，或者其他什么的运营商的效果就不解释了）</li>
-</ul>
-<pre><code>六、分享大家一个IP在线定位的网站openGPS.cn 进入页面后，选择高精度IP定位
-</code></pre><p><img src="/images/1/7.png" alt></p>
-<ul>
-<li>输入我们需要定位的IP地址，以及下面的验证码查询定位，位置还是相当准确的，他确实是在这个学校里。</li>
-</ul>
-<p><img src="/images/1/8.png" alt></p>
-<ul>
-<li>ps：还可以通过 QQ视频，QQ远程协助，的方式来获取IP但所搜索的信息特征有所不同，大家可以自行尝试，以前的发截图方法已经不行了，现在文字和图片的数据都走腾讯服务器。</li>
-</ul>
-
+      <p>##虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用<code>wireshark</code>获取好友IP<br>
       
-    </main>
+    </p></main>
     <footer class="post-footer">
       
       <div class="post-tags">
@@ -298,33 +266,9 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       
-      <p> 今天教给大家一个定位的小技巧，也没什么技术含量，看着玩就好啦  </p>
-<p> 昨天看到社团老大 十三年 在群里发照片装13，结果被我抓到了，哈哈哈哈，每个人都有大意之时。</p>
-<p> 不多说，上图。。。。。居然发现手表不错~~<br><img src="/images/2/1.png" alt></p>
-<pre><code>下面给大家普及各个名词：Exif数据
-</code></pre><ul>
-<li><p>Exif数据里面主要包含了数码照片的信息，包括拍摄时的光圈、快门、白平衡、ISO、焦距、日期时间等各种和拍摄条件以及相机品牌、型号、色彩编码、拍摄时录制的声音以及GPS全球定位系统数据、缩略图等。你可以利用任何可以查看JPEG文件的看图软件浏览Exif格式的照片</p>
-</li>
-<li><p>说完了Exif 数据大家也有了一定的了解，总的来说就是，图片拍摄时的一些设备信息存放在了JPG照片内，不巧的是，腾讯QQ在个人聊天时发出的图片没有经过任何处理，就直接上传发送出来了，我们只需要将对方发送的图片右击另存为，保存到本地电脑，就可以利用工具来查看对方的设备信息了。</p>
-<p><img src="/images/2/2.png" alt></p>
-</li>
-<li><p>上面是利用查看属性初步判定下是否存在GPS信息，结果当然是存在的拉~~</p>
-<p><img src="/images/2/3.png" alt></p>
-<p> 这张就是利用工具 来查看详细的地理信息啦，关键部分打马赛克哈，地理级别可以具体到街道，民用GPS的定位误差一般在50米左右，根据环境的不同，精度也不同，不要来跟我钻牛角尖哈~~</p>
-<p><img src="/images/2/4.png" alt></p>
-<p> 查看下全部信息，我们还发现了 十三年 用的是华为荣耀畅玩4C手机，和一些拍照时的信息参数，那些都不重要，重要的是经纬度，位置要打马赛克(和社长核实了下地址 准确定位到他住的小区)</p>
-<p> 再来看看我们网站里的图片是否有泄露~~<br><img src="/images/2/5.png" alt></p>
-<p> 经过查看发现，照片是使用 iPhone 6s plus 拍摄的，有钱人用苹果。。。。</p>
-<p> 屌丝技术宅的我只会选择Android ，为什么我就不说了。。。。。不过不得不说，我身边用iPhone手机拍照发送出来的图片导入软件后发现都是没有exif信息的，一片空白，由此看来，iPhone在这方面还是考虑的比较全的，相对安全，但是正因为没有信息，更能证明你是iPhone，哈哈哈哈~~~~</p>
-<p> 上面用到的工具是： MagicEXIF 元数据效验器</p>
-<p> 好人做到底附上下载链接[<a href="https://www.magicexif.com/]" target="_blank" rel="noopener">https://www.magicexif.com/]</a></p>
-<p> 在这里说下，不是所有的手机拍摄出来的照片都会包含GPS信息的，只要手机设置里的定位服务关闭了“拍照GPS” 功能就可以避免此类位置泄露事件发生。</p>
-<pre><code>————————————————————————————————————安全是相对的，不安全是绝对的
-</code></pre></li>
-</ul>
-
+      <p> 今天教给大家一个定位的小技巧，也没什么技术含量，看着玩就好啦<br>
       
-    </main>
+    </p></main>
     <footer class="post-footer">
       
       <div class="post-tags">
@@ -374,14 +318,14 @@
     
     <div class="categories-count count-block">
       <div class="site-count-title">分类</div>
-      <div><a href="/categories/">1</a></div>
+      <div><a href="/categories/">3</a></div>
     </div>
     
     
     
     <div class="tags-count count-block">
       <div class="site-count-title">标签</div>
-      <div><a href="/tags/">2</a></div>
+      <div><a href="/tags/">5</a></div>
     </div>
     
     
