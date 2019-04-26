@@ -4,13 +4,27 @@
   
     
     <entry>
-      <title>你好~</title>
-      <link href="/2019/04/22/hello-world/"/>
-      <url>/2019/04/22/hello-world/</url>
+      <title>利用Wireshark任意获取QQ好友IP 实施精准定位</title>
+      <link href="/2017/06/20/qqdw/"/>
+      <url>/2017/06/20/qqdw/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用wireshark获取好友IP"><a href="#虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用wireshark获取好友IP" class="headerlink" title="虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用wireshark获取好友IP"></a>虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用<code>wireshark</code>获取好友IP</h2><pre><code>一、打开wireshark选择本机网卡，由于我本机使用的是无线网卡，所以选择第三个</code></pre><p> <img src="http://5431.github.io1/images/1/1.png" alt="a"></p><pre><code>二、双击点击后将会看到大量的流量数据包传送如下图：</code></pre><p> <img src="http://5431.github.io/images/1/2.png" alt="a"></p><pre><code>三、接下来重点来了，筛选搜索我们想要的数据，按Ctrl + F 键进行搜索；</code></pre><ul><li>1,选择搜索 <code>字符串</code>;</li><li>2,选择搜索 <code>分组详情</code>;</li><li>3,填写搜索数据 <code>020048</code>;</li></ul><p><img src="http://5431.github.io/images/1/3.png" alt="a"></p><pre><code>四、设置好搜索参数之后，接下来就找一个想查询的好友发送QQ电话进行获取IP吧（部分QQ版本不接受QQ电话，也可以获取到IP，PC端和移动端均可获取，只要对方QQ在线收到QQ电话邀请即可）</code></pre><p><img src="http://5431.github.io/images/1/4.png" alt="a"></p><ul><li><p>我发送了一次 QQ电话请求，对方没有接受；<br><img src="http://5431.github.io/images/1/5.png" alt="a"></p><p>五、在发起请求之后，回到wireshark界面，多次点击 <code>查找</code> 来追踪数据，当发现查找能自动定位到连接数据的时候就可以关闭电话邀请，并且停止wireshark的监听，避免差生过多的数据，下面请看查找后自动定位到的数据，192.168.88.103是我本机内网IP，右边的222.139.<strong><em>.</em></strong> 就是对方的IP地址了<br><img src="http://5431.github.io/images/1/6.png" alt="a"></p></li><li><p>获取到IP地址后，可以做到事情就不列举了，今天给大家介绍的是获取ip进行定位（大家都知道IP定位的原理，定位的效果也是视情况而定的，如果是wifi，企业网络，固定IP网络，那么效果当然是非常好的，但是如果是移动网络，或者其他什么的运营商的效果就不解释了）</p><p>  六、分享大家一个IP在线定位的网站openGPS.cn 进入页面后，选择高精度IP定位<br><img src="http://5431.github.io/images/1/7.png" alt="a"></p></li><li><p>输入我们需要定位的IP地址，以及下面的验证码查询定位，位置还是相当准确的，他确实是在这个学校里。</p></li></ul><p><img src="http://5431.github.io/images/1/8.png" alt="a"></p><ul><li>ps：还可以通过 QQ视频，QQ远程协助，的方式来获取IP但所搜索的信息特征有所不同，大家可以自行尝试，以前的发截图方法已经不行了，现在文字和图片的数据都走腾讯服务器。</li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 网络 </tag>
+            
+            <tag> 定位 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -31,22 +45,22 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>网络</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>windows</p>]]></content>
       
     </entry>
     
