@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CVE-2018-4407 ios缓冲区溢出漏洞复现  附 exploit</title>
+      <link href="/2018/10/31/ioshcqyc/"/>
+      <url>/2018/10/31/ioshcqyc/</url>
+      
+        <content type="html"><![CDATA[<p>国外大神Kevin Backhouse刚刚放出了一篇博文，对苹果操作系统内核中发现的堆缓冲区溢出漏洞（CVE-2018-4407）进行了一番解构。</p><p>该漏洞使得攻击者只要接入同一的Wi-Fi网络，即可向其他毫不知情的用户发送恶意数据包来触发任何的Mac或iOS的设备的崩溃和重启。由于该漏洞存在于系统网络核心代码，因此任何反病毒软件均无法防御。<br><a id="more"></a><br>运行以下操作系统的设备易受攻击：</p><p>Apple iOS 11及更早版本：所有设备（升级到iOS 12的部分设备）</p><p>Apple macOS High Sierra（受影响的最高版本为10.13.6）：所有设备（通过安全更新2018-001修复）</p><p>Apple macOS Sierra（受影响的最高版本为10.12.6）：所有设备（通过安全更新2018-005中修复）</p><p>Apple OS X El Capitan及更早版本：所有设备</p><p>举个栗子：</p><p>用户在咖啡馆使用免费的Wi-Fi时，攻击者可以加入相同的无线网络并向用户的设备发送恶意数据包就可以让设备崩溃和重启。（攻击者只要使用NMAP工具就能很方便地获得设备IP地址。）</p><p>下面我们来实战</p><p>python 执行下脚本，后面跟设备的IP地址</p><p><img src="/images/5/1.png" alt></p><p>提示需要安装 scapy 插件，那么我们先来安装下</p><p><img src="/images/5/2.png" alt></p><p>再来一次</p><p><img src="/images/5/3.png" alt></p><p>这次成功的执行了，目标设备已重启，看看效果~</p><p>Exp 下载 <a href="https://github.com/5431/CVE-2018-4407" target="_blank" rel="noopener">https://github.com/5431/CVE-2018-4407</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ios </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> exploit </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>利用Wireshark任意获取QQ好友IP 实施精准定位</title>
       <link href="/2017/06/20/qqdw/"/>
       <url>/2017/06/20/qqdw/</url>
