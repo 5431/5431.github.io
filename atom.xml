@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-26T15:44:49.567Z</updated>
+  <updated>2019-04-28T04:20:55.365Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="http://yoursite.com/2017/06/20/qqdw/"/>
     <id>http://yoursite.com/2017/06/20/qqdw/</id>
     <published>2017-06-20T15:21:00.000Z</published>
-    <updated>2019-04-26T15:44:49.567Z</updated>
+    <updated>2019-04-28T04:20:55.365Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;##虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用&lt;code&gt;wireshark&lt;/code&gt;获取好友IP&lt;br&gt;
+      &lt;p&gt;虽然网上已经有了很多获取IP的qq插件，但是其原理大致都是相同的，但是插件的安全性而言就不敢恭维了，下面介绍如何利用&lt;code&gt;wireshark&lt;/code&gt;获取好友IP&lt;br&gt;
     
     </summary>
     
@@ -39,15 +39,35 @@
   </entry>
   
   <entry>
+    <title>还在用软件翻墙？ 看我几秒钟搞定！</title>
+    <link href="http://yoursite.com/2016/11/23/hostwaf/"/>
+    <id>http://yoursite.com/2016/11/23/hostwaf/</id>
+    <published>2016-11-23T04:38:00.000Z</published>
+    <updated>2019-04-28T04:50:29.249Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;首先说下原理，修设备hosts文件信息，将各大国外网站域名直接指向服务器ip，绕过国家的GFW防火墙，从而可以访问Google、Facebook、ebay、YouTube、Yahoo、、、太多还是不打了，自己测试&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="破解" scheme="http://yoursite.com/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一张图片，你的信息暴露无遗~</title>
     <link href="http://yoursite.com/2016/10/25/zpdw/"/>
     <id>http://yoursite.com/2016/10/25/zpdw/</id>
     <published>2016-10-25T15:07:00.000Z</published>
-    <updated>2019-04-26T15:45:03.140Z</updated>
+    <updated>2019-04-28T04:20:21.528Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt; 今天教给大家一个定位的小技巧，也没什么技术含量，看着玩就好啦&lt;br&gt;
+      &lt;p&gt; 今天教给大家一个&lt;code&gt;定位&lt;/code&gt;的小技巧，也没什么技术含量，看着玩就好啦&lt;br&gt;
     
     </summary>
     
@@ -55,6 +75,34 @@
     
     
       <category term="定位" scheme="http://yoursite.com/tags/%E5%AE%9A%E4%BD%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>饭堂渗透</title>
+    <link href="http://yoursite.com/2016/10/21/ftst/"/>
+    <id>http://yoursite.com/2016/10/21/ftst/</id>
+    <published>2016-10-21T15:48:00.000Z</published>
+    <updated>2019-04-28T04:32:44.688Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;还在担心伙食费？学完这个就不用担心啦！ 渗透饭堂系统 acr 122u 读写器 破解M1卡&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="破解" scheme="http://yoursite.com/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+      <category term="RFID" scheme="http://yoursite.com/tags/RFID/"/>
+    
+      <category term="渗透" scheme="http://yoursite.com/tags/%E6%B8%97%E9%80%8F/"/>
+    
+      <category term="Kali Linux" scheme="http://yoursite.com/tags/Kali-Linux/"/>
+    
+      <category term="NFC" scheme="http://yoursite.com/tags/NFC/"/>
     
   </entry>
   
