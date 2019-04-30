@@ -1,8 +1,10 @@
 const ap = new APlayer({
+    loop: 'all',
+    order: 'random',
     container: document.getElementById('aplayer'),
     fixed: false,
     autoplay: true,
-    order: random,
+    
     audio: [
       {
         name: "美好事物",
