@@ -53,9 +53,9 @@
       <category term="windows" scheme="http://yoursite.com/categories/windows/"/>
     
     
-      <category term="网络" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C/"/>
-    
       <category term="定位" scheme="http://yoursite.com/tags/%E5%AE%9A%E4%BD%8D/"/>
+    
+      <category term="网络" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   

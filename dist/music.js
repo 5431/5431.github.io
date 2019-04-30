@@ -2,6 +2,7 @@ const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: false,
     autoplay: true,
+    order: random,
     audio: [
       {
         name: "美好事物",
