@@ -2,8 +2,6 @@ const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: false,
     autoplay: true,
-    loop: all,
-    order: list,
     audio: [
       {
         name: "美好事物",
