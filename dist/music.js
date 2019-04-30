@@ -12,7 +12,7 @@ const ap = new APlayer({
       {
         name: '云烟成雨',
         artist: '房东的猫',
-        url: 'https://www.5431.name/music/2.mp3',
+        url: 'https://www.5431.name/music/2.MP3',
         cover: 'https://www.5431.name/music/1.jpg',
       },
       {
@@ -24,7 +24,7 @@ const ap = new APlayer({
       {
         name: '下一站茶山刘',
         artist: '房东的猫',
-        url: 'https://www.5431.name/music/4.mp3',
+        url: 'https://www.5431.name/music/4.MP3',
         cover: 'https://www.5431.name/music/1.jpg',
       },
       {
