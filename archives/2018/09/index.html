@@ -133,7 +133,7 @@
     </script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>CVE-2018-4407 ios缓冲区溢出漏洞复现  附 exploit | By-5431</title>
+    <title>归档 | By-5431</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -171,85 +171,34 @@
         <div class="main-container">
           <div class="content">
             
-<div id="post" class="page">
+<div id="archive" class="archive page">
+  <h1 class="page-title">归档</h1>
+  <h2 class="page-counter">
+    
+    你已经写了 6 篇文章！
+    
+  </h2>
+  
+  
+  
+  
+  <h2 class="page-title">2018
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/ioshcqyc/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-       <meta itemprop="name" content="31">
-       <meta itemprop="description" content>
-       <meta itemprop="image" content="/images/avatar.png">
+    <header id="post-header" class="post-header">
+      <h1 class="post-title-simple" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/2018/09/17/iossafaricq/" itemprop="url">点开链接，获得iPhone重启一次</a>
+      </h1>
+      
+      <span class="post-date">
+        <time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-17T15:40:00+08:00">09-17</time>
       </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-       <meta itemprop="name" content="By-5431">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">CVE-2018-4407 ios缓冲区溢出漏洞复现  附 exploit</h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-10-31T15:40:00+08:00">2018-10-31 15:40:00</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ios/" itemprop="url" rel="index"><span itemprop="name">ios</span></a></span>
-        </span>
-        
-        
-      </div>
+      
     </header>
-    <main class="post-main" itemprop="articleBody">
-      <p>国外大神Kevin Backhouse刚刚放出了一篇博文，对苹果操作系统内核中发现的堆缓冲区溢出漏洞（CVE-2018-4407）进行了一番解构。</p>
-<p>该漏洞使得攻击者只要接入同一的Wi-Fi网络，即可向其他毫不知情的用户发送恶意数据包来触发任何的Mac或iOS的设备的崩溃和重启。由于该漏洞存在于系统网络核心代码，因此任何反病毒软件均无法防御。<br><a id="more"></a><br>运行以下操作系统的设备易受攻击：</p>
-<p>Apple iOS 11及更早版本：所有设备（升级到iOS 12的部分设备）</p>
-<p>Apple macOS High Sierra（受影响的最高版本为10.13.6）：所有设备（通过安全更新2018-001修复）</p>
-<p>Apple macOS Sierra（受影响的最高版本为10.12.6）：所有设备（通过安全更新2018-005中修复）</p>
-<p>Apple OS X El Capitan及更早版本：所有设备</p>
-<p>举个栗子：</p>
-<p>用户在咖啡馆使用免费的Wi-Fi时，攻击者可以加入相同的无线网络并向用户的设备发送恶意数据包就可以让设备崩溃和重启。（攻击者只要使用NMAP工具就能很方便地获得设备IP地址。）</p>
-<p>下面我们来实战</p>
-<p>python 执行下脚本，后面跟设备的IP地址</p>
-<p><img src="/images/5/1.png" alt></p>
-<p>提示需要安装 scapy 插件，那么我们先来安装下</p>
-<p><img src="/images/5/2.png" alt></p>
-<p>再来一次</p>
-<p><img src="/images/5/3.png" alt></p>
-<p>这次成功的执行了，目标设备已重启，看看效果~</p>
-<p>Exp 下载 <a href="https://github.com/5431/CVE-2018-4407" target="_blank" rel="noopener">https://github.com/5431/CVE-2018-4407</a></p>
-
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        <a class="post-tag button" href="/tags/exploit/" rel="tag"><i class="fas fa-tags"></i>exploit</a>
-        
-      </div>
-      
-    </footer>
   </article>
   
   
-  <nav class="page-nav">
-    <div class="page-nav-next page-nav-item">
-      
-      <a href="/2018/09/17/iossafaricq/" rel="next" title="点开链接，获得iPhone重启一次"><i class="fas fa-angle-left"></i><span class="nav-title">点开链接，获得iPhone重启一次</span></a>
-      
-    </div>
-    <div class="page-nav-prev page-nav-item">
-      
-    </div>
-  </nav>
-  
-  
-</div>
+</h2></div>
 
           </div>
           
@@ -308,11 +257,6 @@
 
 
   <div class="sidebar-sticky">
-    
-    
-    
-    
-    
     
     
     <hr>

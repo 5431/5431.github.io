@@ -38,6 +38,27 @@
   </entry>
   
   <entry>
+    <title>点开链接，获得iPhone重启一次</title>
+    <link href="http://yoursite.com/2018/09/17/iossafaricq/"/>
+    <id>http://yoursite.com/2018/09/17/iossafaricq/</id>
+    <published>2018-09-17T07:40:00.000Z</published>
+    <updated>2019-05-06T15:24:12.880Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;教大家恶搞苹果IOS手机好友，好友打开直接重启手机&lt;/p&gt;
+&lt;p&gt;主要针对 &lt;code&gt;ios12&lt;/code&gt; 及以下系统的 &lt;code&gt;safari&lt;/code&gt; 浏览器，利用浏览器漏洞实现重启&lt;br&gt;
+    
+    </summary>
+    
+      <category term="ios" scheme="http://yoursite.com/categories/ios/"/>
+    
+    
+      <category term="exploit" scheme="http://yoursite.com/tags/exploit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用Wireshark任意获取QQ好友IP 实施精准定位</title>
     <link href="http://yoursite.com/2017/06/20/qqdw/"/>
     <id>http://yoursite.com/2017/06/20/qqdw/</id>
@@ -53,9 +74,9 @@
       <category term="windows" scheme="http://yoursite.com/categories/windows/"/>
     
     
-      <category term="定位" scheme="http://yoursite.com/tags/%E5%AE%9A%E4%BD%8D/"/>
-    
       <category term="网络" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="定位" scheme="http://yoursite.com/tags/%E5%AE%9A%E4%BD%8D/"/>
     
   </entry>
   

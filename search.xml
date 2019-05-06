@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>点开链接，获得iPhone重启一次</title>
+      <link href="/2018/09/17/iossafaricq/"/>
+      <url>/2018/09/17/iossafaricq/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>教大家恶搞苹果IOS手机好友，好友打开直接重启手机</p><p>主要针对 <code>ios12</code> 及以下系统的 <code>safari</code> 浏览器，利用浏览器漏洞实现重启<br><a id="more"></a><br>只要是用wekit内核的浏览器无一幸免。。</p><p>分析了下代码，大部分都是图片</p><p><img src="/images/6/1.png" alt></p><p>发现关键代码是对图片的模糊处理div嵌套太多。</p><p>在mac safari浏览器打开时卡死主进程，内存暴涨，iphone手机应该同理，只是系统处理机制不同，iphone手机自动重启，mac os 等待网页渲染完毕。由于本人对浏览器内核处理机制没有了解，不知道为什么wekit内核会有问题，初步怀疑是wekit内核对div循环嵌套处理机制有问题引起或者是图片渲染的问题</p><p>下面我们来看下真机效果</p><p>代码下载地址：<a href="https://github.com/5431/safari-reaper" target="_blank" rel="noopener">https://github.com/5431/safari-reaper</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ios </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> exploit </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>利用Wireshark任意获取QQ好友IP 实施精准定位</title>
       <link href="/2017/06/20/qqdw/"/>
       <url>/2017/06/20/qqdw/</url>
@@ -45,9 +70,9 @@
       
         <tags>
             
-            <tag> 定位 </tag>
-            
             <tag> 网络 </tag>
+            
+            <tag> 定位 </tag>
             
         </tags>
       
@@ -153,22 +178,22 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>windows<br>Linux<br>ios<br>Android</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>定位<br>网络<br>Web安全<br>破解<br>RFID<br>软路由<br>路由<br>交换<br>监控<br>维护<br>Python<br>无线电<br>kali</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>定位<br>网络<br>Web安全<br>破解<br>RFID<br>软路由<br>路由<br>交换<br>监控<br>维护<br>Python<br>无线电<br>kali</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>windows<br>Linux<br>ios<br>Android</p>]]></content>
       
     </entry>
     

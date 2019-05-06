@@ -133,7 +133,7 @@
     </script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>CVE-2018-4407 ios缓冲区溢出漏洞复现  附 exploit | By-5431</title>
+    <title>点开链接，获得iPhone重启一次 | By-5431</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
@@ -175,7 +175,7 @@
   
   <article class="article post card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/ioshcqyc/">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/17/iossafaricq/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="31">
        <meta itemprop="description" content>
@@ -186,11 +186,11 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">CVE-2018-4407 ios缓冲区溢出漏洞复现  附 exploit</h1>
+      <h1 class="post-title" itemprop="name headline">点开链接，获得iPhone重启一次</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-10-31T15:40:00+08:00">2018-10-31 15:40:00</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-17T15:40:00+08:00">2018-09-17 15:40:00</time></span>
         </span>
         
         
@@ -206,23 +206,14 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <p>国外大神Kevin Backhouse刚刚放出了一篇博文，对苹果操作系统内核中发现的堆缓冲区溢出漏洞（CVE-2018-4407）进行了一番解构。</p>
-<p>该漏洞使得攻击者只要接入同一的Wi-Fi网络，即可向其他毫不知情的用户发送恶意数据包来触发任何的Mac或iOS的设备的崩溃和重启。由于该漏洞存在于系统网络核心代码，因此任何反病毒软件均无法防御。<br><a id="more"></a><br>运行以下操作系统的设备易受攻击：</p>
-<p>Apple iOS 11及更早版本：所有设备（升级到iOS 12的部分设备）</p>
-<p>Apple macOS High Sierra（受影响的最高版本为10.13.6）：所有设备（通过安全更新2018-001修复）</p>
-<p>Apple macOS Sierra（受影响的最高版本为10.12.6）：所有设备（通过安全更新2018-005中修复）</p>
-<p>Apple OS X El Capitan及更早版本：所有设备</p>
-<p>举个栗子：</p>
-<p>用户在咖啡馆使用免费的Wi-Fi时，攻击者可以加入相同的无线网络并向用户的设备发送恶意数据包就可以让设备崩溃和重启。（攻击者只要使用NMAP工具就能很方便地获得设备IP地址。）</p>
-<p>下面我们来实战</p>
-<p>python 执行下脚本，后面跟设备的IP地址</p>
-<p><img src="/images/5/1.png" alt></p>
-<p>提示需要安装 scapy 插件，那么我们先来安装下</p>
-<p><img src="/images/5/2.png" alt></p>
-<p>再来一次</p>
-<p><img src="/images/5/3.png" alt></p>
-<p>这次成功的执行了，目标设备已重启，看看效果~</p>
-<p>Exp 下载 <a href="https://github.com/5431/CVE-2018-4407" target="_blank" rel="noopener">https://github.com/5431/CVE-2018-4407</a></p>
+      <p>教大家恶搞苹果IOS手机好友，好友打开直接重启手机</p>
+<p>主要针对 <code>ios12</code> 及以下系统的 <code>safari</code> 浏览器，利用浏览器漏洞实现重启<br><a id="more"></a><br>只要是用wekit内核的浏览器无一幸免。。</p>
+<p>分析了下代码，大部分都是图片</p>
+<p><img src="/images/6/1.png" alt></p>
+<p>发现关键代码是对图片的模糊处理div嵌套太多。</p>
+<p>在mac safari浏览器打开时卡死主进程，内存暴涨，iphone手机应该同理，只是系统处理机制不同，iphone手机自动重启，mac os 等待网页渲染完毕。由于本人对浏览器内核处理机制没有了解，不知道为什么wekit内核会有问题，初步怀疑是wekit内核对div循环嵌套处理机制有问题引起或者是图片渲染的问题</p>
+<p>下面我们来看下真机效果</p>
+<p>代码下载地址：<a href="https://github.com/5431/safari-reaper" target="_blank" rel="noopener">https://github.com/5431/safari-reaper</a></p>
 
     </main>
     <footer class="post-footer">
@@ -240,10 +231,12 @@
   <nav class="page-nav">
     <div class="page-nav-next page-nav-item">
       
-      <a href="/2018/09/17/iossafaricq/" rel="next" title="点开链接，获得iPhone重启一次"><i class="fas fa-angle-left"></i><span class="nav-title">点开链接，获得iPhone重启一次</span></a>
+      <a href="/2017/06/20/qqdw/" rel="next" title="利用Wireshark任意获取QQ好友IP 实施精准定位"><i class="fas fa-angle-left"></i><span class="nav-title">利用Wireshark任意获取QQ好友IP 实施精准定位</span></a>
       
     </div>
     <div class="page-nav-prev page-nav-item">
+      
+      <a href="/2018/10/31/ioshcqyc/" rel="prev" title="CVE-2018-4407 ios缓冲区溢出漏洞复现  附 exploit"><span class="nav-title">CVE-2018-4407 ios缓冲区溢出漏洞复现  附 exploit</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </nav>
